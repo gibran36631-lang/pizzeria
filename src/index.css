@@ -1,5 +1,16 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root { font-synthesis-weight: none; text-rendering: optimizeLegibility; }
+
+/* Ajustes básicos de renderizado */
+:root {
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Sane defaults */
+* { box-sizing: border-box; }
+html, body, #root { height: 100%; }
+img { display: block; max-width: 100%; }
